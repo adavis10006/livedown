@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "body-parser": "^1.9.2",
+    "cheerio": "^1.0.0-rc.2",
     "chokidar": "^1.6.1",
     "dir-resolve": "^1.0.2",
     "express": "^4.10.2",
@@ -32,7 +33,7 @@
     "minimist": "^1.1.0",
     "opn": "^5.1.0",
     "prism-themes": "^1.0.0",
-    "prismjs": "file:../../Hexo-SideProject/prismJS",
+    "prismjs": "^1.9.0",
     "request": "^2.48.0",
     "socket.io": "^2.0.3"
   },
