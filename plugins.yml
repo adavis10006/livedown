@@ -1,0 +1,87 @@
+prismJS:
+    theme: 'hopscotch'
+    plugins:
+        - plugin:
+            name: file-highlight
+            # enable: true
+            enable: false
+            css: false
+        - plugin:
+            name: toolbar
+            # enable: false
+            enable: true
+            css: true
+        - plugin:
+            name: show-language
+            # enable: false
+            enable: true
+            css: false
+        - plugin:
+            name: line-numbers
+            # enable: false
+            enable: true
+            css: true
+MarkdownIt:
+    highlight: false
+    html: true
+    xhtmlOut: true
+    breaks: false
+    linkify: true
+    typographer: false
+    langPrefix: language-
+    plugins:
+        - plugin:
+            name: markdown-it-emoji
+            enable: true
+        - plugin:
+            name: markdown-it-sup
+            enable: true
+        - plugin:
+            name: markdown-it-deflist
+            enable: true
+        - plugin:
+            name: markdown-it-abbr
+            enable: true
+        - plugin:
+            name: markdown-it-footnote
+            enable: true
+        - plugin:
+            name: markdown-it-ins
+            enable: true
+        - plugin:
+            name: markdown-it-mark
+            enable: true
+        - plugin:
+            name: markdown-it-katex
+            enable: false
+        - plugin:
+            name: markdown-it-toc
+            enable: true
+            # enable: false
+        - plugin:
+            name: markdown-it-github-headings
+            enable: true
+            # enable: false
+            options:
+                prefixHeadingIds: false
+                prefix: ''
+        - plugin:
+            name: markdown-it-toc-and-anchor
+            # enable: true
+            enable: false
+            options:
+                anchorLink: true
+                anchorLinkBefore: false
+                anchorLinkSymbol: ¶
+                tocFirstLevel: 2
+        - plugin:
+            name: markdown-it-imsize
+            enable: true
+            options:
+                autofill: true
+        - plugin:
+            name: markdown-it-decorate
+            enable: true
+        - plugin:
+            name: markdown-it-task-checkbox
+            enable: true

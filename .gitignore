@@ -1,2 +1,7 @@
 node_modules/
 *.log
+
+public/css/*
+public/js/*
+!public/css/.gitKeep
+!public/js/.gitKeep
