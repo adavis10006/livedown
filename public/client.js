@@ -2,20 +2,33 @@
 
 var socket = io.connect(window.location.origin)
 
-hljs.configure({languages: []})
 
+// socket.emit('server', socket)
 socket.on('content', function (data) {
   $('.markdown-body').html(data)
-  $('code').each(function (_, block) {
-    $(this).parent().addClass($(this).attr('class'))
-  })
-  $('pre').each(function (_, block) {
-    hljs.highlightBlock(block)
-  })
+  Prism.highlightAll();
 })
+
+// var init_highlight = false;
 
 socket.on('title', function (data) {
   $('title').html(data)
+})
+
+socket.on('style', function (data) {
+  // if (!init_highlight) {
+  $('head').append(data)
+  console.log("fetch style\n");
+    // init_highlight = true;
+  // }
+})
+
+socket.on('javascript', function (data) {
+  // if (!init_highlight) {
+  $('body').append(data)
+  console.log("fetch javascript\n");
+    // init_highlight = true;
+  // }
 })
 
 socket.on('kill', function () {
