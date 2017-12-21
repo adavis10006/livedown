@@ -169,8 +169,8 @@ MarkdownIt:
             enable: false
         - plugin:
             name: markdown-it-toc
-            enable: true
-            # enable: false
+            # enable: true
+            enable: false
         - plugin:
             name: markdown-it-github-headings
             enable: true
@@ -180,10 +180,10 @@ MarkdownIt:
                 prefix: ''
         - plugin:
             name: markdown-it-toc-and-anchor
-            # enable: true
-            enable: false
+            enable: true
+            # enable: false
             options:
-                anchorLink: true
+                anchorLink: false
                 anchorLinkBefore: false
                 anchorLinkSymbol: ¶
                 tocFirstLevel: 2
